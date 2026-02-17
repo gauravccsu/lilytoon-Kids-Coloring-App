@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<title>Lilytoon App</title>
+
+<style>
+
+/* ===== GLOBAL ===== */
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:#f4f7fb;
+  color:#333;
+  line-height:1.6;
+}
+
+/* ===== HEADER ===== */
+header{
+  background:#0b1d3a;
+  color:#fff;
+  padding:12px 20px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+header img{
+  height:45px;
+}
+
+header h1{
+  font-size:20px;
+  margin:0;
+  font-weight:600;
+}
+
+/* ===== HERO ===== */
+.hero{
+  background:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+  url("https://images.unsplash.com/photo-1518779578993-ec3579fee39f");
+  background-size:cover;
+  background-position:center;
+  color:white;
+  text-align:center;
+  padding:80px 20px;
+}
+
+.hero h2{
+  font-size:42px;
+  margin-bottom:10px;
+  letter-spacing:2px;
+}
+
+.hero p{
+  max-width:700px;
+  margin:auto;
+  opacity:.9;
+}
+
+/* ===== SECTIONS ===== */
+.section{
+  max-width:1100px;
+  margin:40px auto;
+  padding:40px 25px;
+  background:white;
+  border-radius:14px;
+  box-shadow:0 4px 20px rgba(0,0,0,0.08);
+}
+
+.section h2{
+  text-align:center;
+  margin-bottom:20px;
+  color:#0b1d3a;
+}
+
+.section p{
+  text-align:justify;
+  margin-bottom:16px;
+}
+
+/* ===== FEATURES ===== */
+.features{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+  align-items:center;
+}
+
+.features img{
+  width:100%;
+  border-radius:12px;
+  box-shadow:0 4px 14px rgba(0,0,0,.15);
+}
+
+/* ===== VIDEO ===== */
+.video-container{
+  position:relative;
+  width:100%;
+  padding-bottom:56.25%;
+  height:0;
+  overflow:hidden;
+  border-radius:12px;
+  box-shadow:0 4px 20px rgba(0,0,0,.2);
+}
+
+.video-container iframe{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  border:0;
+}
+
+/* ===== BUTTON ===== */
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 26px;
+  background:#2ecc71;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
+  transition:.3s;
+}
+
+.btn:hover{
+  background:#27ae60;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#0b1d3a;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:768px){
+
+  .hero h2{
+    font-size:28px;
+  }
+
+  .features{
+    grid-template-columns:1fr;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <img src="splash_logo.png" alt="Lilytoon Logo">
+  <h1>Lilytoon App</h1>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <h2>LILYTOON</h2>
+  <p>Fun learning & coloring experience designed especially for kids.</p>
+</section>
+
+<!-- ===== SECTION 1 — VISION ===== -->
+<section class="section">
+  <h2>Our Vision</h2>
+
+  <p>
+  Lilytoon is dedicated to empowering children through creativity-driven digital
+  experiences. We are building a platform where imagination leads the journey —
+  encouraging kids to create, explore, and express freely without limits.
+  </p>
+
+  <p>
+  Our goal is to cultivate storytelling skills, creative thinking, and artistic
+  confidence while making technology a positive companion in every child’s growth.
+  </p>
+
+</section>
+
+<!-- ===== SECTION 2 — FEATURES ===== -->
+<section class="section">
+
+  <h2>App Highlights</h2>
+
+  <div class="features">
+
+    <img src="feature1.png" alt="Color Effects">
+
+    <div>
+      <h3>Kids Love Color Effects</h3>
+      <p>
+      Multiple brush styles, glowing colors, and fun patterns make coloring
+      exciting. Children can experiment creatively while improving hand-eye
+      coordination and artistic confidence.
+      </p>
+    </div>
+
+  </div>
+
+  <br>
+
+  <div class="features">
+
+    <img src="feature2.png" alt="Brushes">
+
+    <div>
+      <h3>7 Brushes • 50+ Colors</h3>
+      <p>
+      From neon spray to glitter brushes, Lilytoon offers rich coloring tools
+      designed for endless fun and creativity.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===== SECTION 3 — VIDEO ===== -->
+<section class="section">
+
+  <h2>Watch Lilytoon in Action</h2>
+
+<div class="video-container">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/4M2Kura6_UE"
+    title="Lilytoon App Demo"
+    style="border:0; position:absolute; top:0; left:0; width:100%; height:100%;"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+</section>
+
+<!-- ===== SECTION 4 — PRIVACY ===== -->
+<section class="section">
+
+  <h2>Privacy & Safety</h2>
+
+  <p>
+  Lilytoon is designed with children’s safety as a top priority. We provide a
+  secure, family-friendly environment where kids can explore creativity without
+  exposure to harmful content.
+  </p>
+
+  <center>
+    <a class="btn"
+       href="https://sites.google.com/view/lilytoon-app/home"
+       target="_blank">
+       View Privacy Policy
+    </a>
+  </center>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  © 2026 Lilytoon App • All Rights Reserved
+</footer>
+
+</body>
+</html>
